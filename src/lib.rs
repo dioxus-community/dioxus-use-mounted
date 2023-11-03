@@ -7,7 +7,7 @@ pub fn use_mounted<T>(cx: Scope<T>) -> UseMounted {
     UseMounted { signal }
 }
 
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, PartialEq)]
 pub struct UseMounted {
     pub signal: Signal<Option<Rc<MountedData>>>
 }
