@@ -6,6 +6,6 @@ edition = "2021"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-dioxus = { git = "https://github.com/dioxuslabs/dioxus" }
-dioxus-web = { git = "https://github.com/dioxuslabs/dioxus" }
-dioxus-signals = { git = "https://github.com/dioxuslabs/dioxus" }
+dioxus = "0.5.0-alpha.2"
+dioxus-web = "0.5.0-alpha.2"
+dioxus-signals = "0.5.0-alpha.2"

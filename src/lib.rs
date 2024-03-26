@@ -1,9 +1,8 @@
 use std::rc::Rc;
 use dioxus::prelude::*;
-use dioxus_signals::{Signal, use_signal};
 
-pub fn use_mounted<T>(cx: Scope<T>) -> UseMounted {
-    let signal = use_signal(cx, || None);
+pub fn use_mounted() -> UseMounted {
+    let signal = use_signal(|| None);
     UseMounted { signal }
 }
 
@@ -17,7 +16,7 @@ impl UseMounted {
         self.mount(event.data)
     }
 
-    pub fn mount(self, data: Rc<MountedData>) {
+    pub fn mount(mut self, data: Rc<MountedData>) {
         self.signal.set(Some(data));
     }
 }

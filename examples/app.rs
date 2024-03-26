@@ -1,11 +1,14 @@
 use dioxus::prelude::*;
 use dioxus_use_mounted::use_mounted;
+use dioxus_web::Config;
 
-fn app(cx: Scope) -> Element {
-    let mounted = use_mounted(cx);
-    render!( div { onmounted: move |event| mounted.onmounted(event) } )
+fn app() -> Element {
+    let mounted = use_mounted();
+    rsx!(div {
+        onmounted: move |event| mounted.onmounted(event)
+    })
 }
 
 fn main() {
-    dioxus_web::launch(app)
+    dioxus_web::launch::launch_cfg(app, Config::new())
 }
