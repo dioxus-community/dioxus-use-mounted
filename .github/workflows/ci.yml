@@ -17,9 +17,5 @@ jobs:
       - uses: actions/checkout@v3
       - name: Install the nightly toolchain
         uses: dtolnay/rust-toolchain@nightly
-      - name: Install linux dependencies
-        if: runner.os == 'Linux'
-        run: |
-          sudo apt update && sudo apt install build-essential libssl-dev pkg-config libglib2.0-dev libgtk-3-dev
       - run: cargo build --verbose
       - run: cargo test --verbose
