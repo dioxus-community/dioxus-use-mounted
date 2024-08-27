@@ -1,5 +1,5 @@
-use std::rc::Rc;
 use dioxus::prelude::*;
+use std::rc::Rc;
 
 pub fn use_mounted() -> UseMounted {
     let signal = use_signal(|| None);
@@ -8,7 +8,7 @@ pub fn use_mounted() -> UseMounted {
 
 #[derive(Clone, Copy, PartialEq)]
 pub struct UseMounted {
-    pub signal: Signal<Option<Rc<MountedData>>>
+    pub signal: Signal<Option<Rc<MountedData>>>,
 }
 
 impl UseMounted {
