@@ -1,13 +1,13 @@
 [package]
 name = "dioxus-use-mounted"
 description = "Dioxus hook to use a mounted element"
-version = "0.3.0-alpha.4"
+version = "0.3.0"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/dioxus-community/dioxus-use-mounted"
 
 [dependencies]
-dioxus = "0.6.0-alpha.3"
+dioxus = "0.6.0"
 
 [dev-dependencies]
-dioxus-web = "0.6.0-alpha.3"
+dioxus-web = "0.6.0"
