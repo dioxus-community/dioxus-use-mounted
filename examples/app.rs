@@ -1,6 +1,5 @@
 use dioxus::prelude::*;
 use dioxus_use_mounted::use_mounted;
-use dioxus_web::Config;
 
 fn app() -> Element {
     let mounted = use_mounted();
@@ -10,5 +9,5 @@ fn app() -> Element {
 }
 
 fn main() {
-    dioxus_web::launch::launch_cfg(app, Config::new())
+    launch(app)
 }

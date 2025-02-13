@@ -1,4 +1,4 @@
-use dioxus::prelude::*;
+use dioxus_lib::prelude::*;
 use std::rc::Rc;
 
 pub fn use_mounted() -> UseMounted {
