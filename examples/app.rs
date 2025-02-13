@@ -1,4 +1,4 @@
-use dioxus::prelude::*;
+use dioxus_lib::prelude::*;
 use dioxus_use_mounted::use_mounted;
 use dioxus_web::Config;
 
