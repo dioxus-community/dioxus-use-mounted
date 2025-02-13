@@ -1,5 +1,5 @@
 use dioxus::launch;
-use dioxus_lib::prelude::*;
+use dioxus::prelude::*;
 use dioxus_use_mounted::use_mounted;
 
 fn app() -> Element {
